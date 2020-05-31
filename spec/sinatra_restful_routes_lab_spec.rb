@@ -29,6 +29,7 @@ describe "Recipe App" do
       all_link_hrefs = page.all(:css, "a[href]").map do |element| 
         element[:href] 
       end
+      
       expect(all_link_hrefs).to include("/recipes/#{@recipe1.id}")
       expect(all_link_hrefs).to include("/recipes/#{@recipe2.id}")
     end
