@@ -1,6 +1,6 @@
 <h1> Welcome to the Recipe App </h1>
 <% @recipes.each do |c| %>
-<a href="/recipes/#{c.id}">Name: <%= c.name %></a><br>
+<a href="/recipes/<%= c.id %>" Name: <%= c.name %></a><br>
 Ingredients: <%= c.ingredients %><br>
 Cook Time: <%= c.cook_time %><br>
 <% end %>
